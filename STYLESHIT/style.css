@@ -1,0 +1,508 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.515);
+    text-align: right;
+    font-family: 'Chivo Mono', monospace;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+}
+.navbar ul{
+    display: inline-flex;
+    list-style: none;
+    overflow: hidden;    
+
+}
+.navbar ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li{
+    font-size: 18px;
+    width: 150px;
+    height:50px;
+    padding: 15px;
+    margin: 15px;
+
+}
+
+.navbar ul a:hover{
+    color: rgb(102, 206, 171);
+}
+.dropmenu {
+    display: block;
+    visibility: hidden;
+    /* display: none; */
+    opacity: 0;
+    transform: translateZ(-2em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.navbar ul li:hover .dropmenu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translatez(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    position: absolute;
+    background-color: rgb(54, 54, 54);
+    margin-top: 15px;
+    /* margin-left: -15px; */
+    color: aliceblue;
+    border-top: 3px solid rgba(7, 255, 172, 0.825);
+
+}
+.navbar ul li .fa-solid{
+    visibility: hidden;
+}
+.navbar ul li:hover .fa-solid{
+    visibility: visible;
+}
+.navbar ul li:hover{
+    transition: all .5s ease-in-out;
+    color: aquamarine;
+    border-radius: 3px;
+}
+.navbar .fa-solid{
+    margin-left: 7px;
+}
+.navbar .logo .fa-solid:hover{
+    color: gold;
+    text-shadow: 1px 1px 10px gray;
+    transition: all .5s ease-out;
+}
+.navbar .logo .fa-solid{
+    color: rgb(246, 245, 245);
+    position: absolute;
+    /* background-color: red; */
+    top: 20px;
+    left: 200px;
+    font-size: 50px;
+    color: aqua;
+
+}
+.dropmenu ul li{
+    width: 192px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.558);
+    text-align: left;
+    /* display: block; */
+}
+.dropmenu ul li:hover{
+    background-color: rgba(255, 255, 255, 0.166);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    color:rgb(53, 245, 255);
+    display: block;
+}
+.navbar ul li:hover .dropmenu ul{
+    display: block;
+}
+.banner1{
+    position: relative;
+    left: -900px;
+    width: 75px;
+    font-family:'myfont';
+
+}
+.banner1 #image1{
+    position: relative;
+    left: 250px;
+    top: 270px;
+    opacity: 100%;
+    background-color: transparent;
+
+}
+.banner1 #image2{
+    position: relative;
+    left: 250px;
+    top: 90px;
+    opacity: 50%;
+    background-color: transparent;
+}
+.banner1 #image3{
+    position: relative;
+    opacity: 20%;
+    left: 250px;
+    bottom: 120px;
+    background-color: transparent;
+}
+.banner1para1{
+    color: white;
+}
+#w2{
+    color: aqua;
+}
+.firstbanner{
+    font-family: 'Chivo Mono', monospace;
+    display: flex;
+}
+.firstbanner img{
+    opacity: 0.25;
+}
+.firstbanner{
+    overflow: hidden;
+}
+.banner1para1 p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.banner1para1{
+    font-size: 40px;
+    position: relative;
+    top: 300px;
+    left: -1100px;
+}
+.banner1para1 .startbtn:hover{
+    background-color: white;
+    box-shadow: 10px 5px aqua;
+    width:150px;
+    height: 60px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all .18s ease-in;
+}
+.banner1para1 .startbtn{
+    width: 140px;
+    font-family: 'Chivo Mono', monospace;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+    box-shadow: 10px 5px rgb(255, 255, 255);
+    font-size: 18px;
+    border:2px solid black;
+    border-radius: 3px;
+}
+
+.banner1para1 span{
+    color: gray;
+}
+.box1{
+    display: flex;
+}
+.box2{
+    display: flex;
+    border-left: 1px solid rgb(255, 255, 255);
+    padding-left: 30px;
+}
+.artist p{
+    padding: 24px 10px;
+    color: gray;
+}
+.artist h2:hover{
+    color: rgb(20, 184, 193);
+    transition: all .5s  ease-in-out;
+
+}
+.artist h2{
+    font-size: 50px;
+}
+.artist{
+    color: aliceblue;
+    position: absolute;
+    top: 1000px;
+    left: 140px;
+    width: 1100px;
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.fontimg{
+    position: absolute;
+    top: 1170px;
+    left: 190px;
+}
+.fontimg img:hover{
+    transition: all .5s  ease-in-out;
+    width: 200px;
+    opacity: 200%;
+}
+.fontimg img{
+    margin: 20px;
+    opacity: 90%;
+    cursor:pointer;
+
+}
+.content2 .backimg{
+    opacity: 0.35;
+    position: relative;
+    left: 250px;
+    top: 80px;
+}
+.content2 .sideimg1:hover{
+    opacity: 50%;
+    transition: all .5s ease-in;
+}
+.content2 .sideimg1{
+    position: relative;
+    left: -240px;
+}
+.content2para2{
+    position: relative;
+    top: 100px;
+    color: white;
+    text-align: justify;
+    width: 500px;
+    font-size: 22px;
+}
+#content2color{
+    color: white;
+}
+.content2para2 p{
+    color: gray;
+    line-height: 40px;
+}
+.content2{
+    display: flex;
+    font-family: 'Crimson Text', serif; 
+}
+#contentbtn2 .fa-solid{
+    color: aqua;
+    display: none;
+    padding: 4px 9px;
+
+}
+#contentbtn2:hover .fa-solid{
+    display:flex;
+    color: aqua;
+
+}
+#contentbtn2:hover{
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.137);
+    box-shadow: 1px 1px 5px white;
+
+    
+}
+.content2para2 h1::first-letter{
+    color: rgba(0, 255, 255, 0.432);
+    font-size: 56px;
+}
+#contentbtn2{
+    padding-top: 10px;
+    display: flex;
+    border: none;
+    color: aqua;
+    font-size: 22px;
+    width: 0px;
+    background-color: rgba(0, 0, 0, 0.189);
+    padding-bottom: 9px;
+    background-color: transparent;
+    -webkit-transition:width .8s; /* Firefox 4 */
+    border-radius: 4px;
+    
+}
+.content3 .sideimg2{
+    position: relative;
+    left: 240px;
+    opacity: 100%;
+
+}
+.content3 .backimg2{
+    opacity: 0.35;
+    position: relative;
+    left: -190px;
+
+}
+.content3ph1{
+    position: relative;
+    left: 300px;
+    font-size: 35px;
+}
+.content3{
+    overflow: hidden;
+    position: absolute;
+    top: 2000px;
+    left: 00px;
+    color: white;
+    display: flex;
+}
+#content3span{
+    font-size: 20px;
+    color: gray;
+    text-decoration: underline gray;
+    text-align: left;
+}
+.content3para3 ul li p{
+    color: gray;
+}
+.content3para3 ul li p,h1{
+    margin: 10px;
+}
+.content3para3 ul li:hover p{
+    color: white;
+}
+.content3para3 ul li:hover{
+    background: linear-gradient(#424141, #0a0a0a);
+    border-radius: 30px;
+    color: rgb(0, 249, 249);
+    transition: all .5s ease-in-out;
+    box-shadow: 4px 4px 5px rgb(133, 133, 133);
+}
+.content3para3 ul li:nth-of-type(1){
+    background: linear-gradient(#424141, #0a0a0a);
+    border-radius: 30px;
+}
+.content3para3 ul li{
+    color: aquamarine;
+    padding: 25px;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#othersidep1{
+    color: gray;
+}
+#sideimg2 h1::first-letter{
+    color: aqua;
+    font-size: 52px;
+}
+.content3para3{
+    position: relative;
+    top: 100px;
+}
+.banner2{
+    position: relative;
+    top: 1150px;
+    display: flex;
+    left: 250px;
+    width: 1000px;
+    height: 280px;
+    border-radius:25px;
+    background-color: rgb(4, 157, 157);
+    border: 10px;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding: 30px 
+}
+.buttonb2{
+    background-image: url(../IMAGE/pic4.png);
+    background-size:100% 160%;
+    width:600px;
+    height: 250px; 
+    margin: 0;
+}
+.buttonb2 button{
+    border-radius: 5px;
+}
+.banner2 button:hover{
+    background-color:white;
+    color: #0a0a0a;
+    transition: all .6s ease;
+}
+.banner2 button{
+    position: relative;
+    top: 90px;
+    left: 100px;
+    width: 150px;
+    height: 60px;
+    border: 0;
+    border: 3px solid black;
+    color: white;
+    background-color: black;
+    font-size: 21px;
+}
+
+.contentb2 h1 div:hover{
+    height:50px;
+}
+.contentb2 h1 div{
+    background-color: rgba(255, 255, 255, 0.571);
+    height: 5px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    transition:  height .5s ease-out;
+    width: fit-content;
+
+}
+.banner3{
+    position: absolute;
+    top: 3300px;
+    left: 50px;
+}
+.banner3 img{
+    border-radius: 50px;
+}
+.banner3 .fa-solid:hover{
+    color: red;
+    transition: all 1s ease-out;
+}
+.banner3 .fa-solid{
+   position: relative;
+   left: 650PX;
+   bottom: 300px;
+   font-size: 100px;
+   color: #ff00009c;
+}
+.footer{
+    display: flex;
+    color: white;
+    position: relative;
+    top: 2000px;
+    justify-content: space-around;
+}
+.fcontent1:hover,.fcontent2:hover,.fcontent3:hover{
+    background-color: rgba(61, 113, 115, 0.371);
+    transition: all .5s ease-out;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(143, 143, 143);
+    color: rgb(255, 255, 255);
+}
+.footer,.fcontent1,.fcontent2,.fcontent3{
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    border-left: 3px solid rgb(34, 90, 114);
+}
+.fcontent3 button{
+    position: relative;
+    left: 190px;
+    top: -52px;
+    background-color: rgb(93, 172, 146);
+    cursor: pointer;
+    color: white;
+}
+.fcontent3 input{
+    background-color: rgba(115, 112, 112, 0.573);
+}
+.fcontent3 input ,button{
+    border: none;
+    border-radius: 19px;
+    font-size: 19px;
+    padding: 15px;
+}
+.fcontent2,.fcontent3 {
+    line-height: 40px; 
+}
+.fcontent2 a{
+    color: rgb(185, 176, 176);
+}
+.fcontent1 h1{
+    padding-bottom: 20px;
+}
+.copyright span{
+    color: aqua;
+    font-size: 22px;
+    padding-left: 20px;
+}
+.copyright{
+    position: relative;
+    top: 2000px;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.436);
+    color: rgba(255, 255, 255, 0.408);
+    padding: 20px
+}
+
